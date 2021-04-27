@@ -46,4 +46,15 @@ public class Time24Test
         boolean testing = (timeString.equals("12:15"));
         assertTrue( testing );
     }
+    @Test
+    public void test_Case_900()
+    {
+        Time24 tester = null;
+        tester = tester.toTime24(9, 0, AmPm.am);
+        
+        String timeString = tester.toString();
+        boolean testing = (timeString.equals(" 9:00"));
+        assertTrue( testing );
+    }
+    
 }
