@@ -62,7 +62,7 @@ public class Time24
 		}
 		try{
 			time = new Time24(hours, minutes);
-		}catch(Exception e){
+		}catch(InvalidTimeException e){
 			
 		}
 		
