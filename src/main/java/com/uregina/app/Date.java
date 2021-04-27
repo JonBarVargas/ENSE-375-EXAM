@@ -123,6 +123,15 @@ public class Date
 	public static boolean lessThan(Date d1,Date d2)
 	{
 		//Todo: Add your code here
+		if(d1.getYear() < d2.getYear()){
+			return true;
+		}
+		if(d1.getMonth() < d2.getMonth()){
+			return true;
+		}
+		if(d1.getDay() < d2.getMonth()){
+			return true;
+		}
 		
 		return false;
 	}
