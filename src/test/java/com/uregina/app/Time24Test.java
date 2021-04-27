@@ -53,6 +53,7 @@ public class Time24Test
         tester = tester.toTime24(9, 0, AmPm.am);
         
         String timeString = tester.toString();
+        System.out.println(timeString);
         boolean testing = (timeString.equals(" 9:00"));
         assertTrue( testing );
     }
