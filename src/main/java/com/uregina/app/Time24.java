@@ -49,6 +49,10 @@ public class Time24
 	{
 		Time24 time=null;
 		//Todo : add your code here
+		//let us test with 1:30pm
+		
+
+
 
 
 		// End of your code
