@@ -50,8 +50,17 @@ public class Time24
 		Time24 time=null;
 		//Todo : add your code here
 		//let us test with 1:30pm
-		
-
+		if(am_pm == AmPm.pm){
+			if(hours != 12){
+				hours += 12;
+			}
+		}
+		else{
+			if(hourse ==12){
+				hours = 0;
+			}
+		}
+		time = new Time24(hourse,minutes) ;
 
 
 
