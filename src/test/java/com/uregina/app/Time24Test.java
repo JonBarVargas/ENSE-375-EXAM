@@ -15,14 +15,15 @@ public class Time24Test
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()throws InvalidTimeException
+    public void test_Case_130()throws InvalidTimeException
     {   
         
         Time24 tester = null;
         tester = tester.toTime24(1, 30, AmPm.pm);
         
        // AmPm yeeters = tester.getAM_or_PM();
-        boolean testing = ((tester.getHours()) == 13);
+       String timeString = tester.toString();
+        boolean testing = (timeString.equals("13:30"));
         assertTrue( testing );
     }
 }
