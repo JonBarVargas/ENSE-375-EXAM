@@ -13,13 +13,11 @@ public class Time12Test
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldAnswerWithTrue()throws exception
     {   
-        try{
+        
         Time12 tester = new Time12(1, 30, AmPm.pm);
-        }catch(Exception e){
-            system.out.println(e.getMessage());
-        }
+        
         AmPm yeeters = tester.getAM_or_PM;
         //boolean testing = ((tester.getAM_or_PM()) == AmPm.pm);
         assertTrue( testing );
