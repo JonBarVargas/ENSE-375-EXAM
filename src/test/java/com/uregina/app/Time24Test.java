@@ -21,7 +21,7 @@ public class Time24Test
         Time24 tester = null;
         tester = tester.toTime24(1, 30, AmPm.pm);
         
-        AmPm yeeters = tester.getAM_or_PM();
+       // AmPm yeeters = tester.getAM_or_PM();
         boolean testing = ((tester.getHours()) == 13);
         assertTrue( testing );
     }
