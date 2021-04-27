@@ -77,9 +77,9 @@ public class Time12
 		//Todo: add your code here
 		Time24 time12T1 = t1.toTime24();
 		Time24 time12T2 = t2.toTime24();
-		T1mins = time12T1.getHours() * 60;
+		int T1mins = time12T1.getHours() * 60;
 		T1mins += time12T1.getHours();
-		T2mins = time12T2.getHours() * 60;
+		int T2mins = time12T2.getHours() * 60;
 		T2mins += time12T2.getMinutes();
 
 		difference = T1mins -T2mins;
