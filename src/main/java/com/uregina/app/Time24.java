@@ -56,7 +56,7 @@ public class Time24
 			}
 		}
 		else{
-			if(hourse ==12){
+			if(hours ==12){
 				hours = 0;
 			}
 		}
