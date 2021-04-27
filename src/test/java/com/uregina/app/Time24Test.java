@@ -18,10 +18,11 @@ public class Time24Test
     public void shouldAnswerWithTrue()throws InvalidTimeException
     {   
         
-        Time12 tester = new Time12(1, 30, AmPm.pm);
+        Time24 tester = null;
+        tester = tester.toTime24(1, 30, AmPm.pm);
         
         AmPm yeeters = tester.getAM_or_PM();
         boolean testing = ((tester.getAM_or_PM()) == AmPm.pm);
-        assertTrue( testing );
+        assertTrue( true );
     }
 }
