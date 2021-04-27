@@ -15,7 +15,7 @@ public class Time12Test
     @Test
     public void shouldAnswerWithTrue()
     {   
-        Time12 tester = new Time12(1, 30, AmPm.pm);
+        Time12 tester = new Time12(1, 30, pm);
         boolean testing = (tester.getAM_or_PM()) == AmPm.pm;
         assertTrue( testing );
     }
