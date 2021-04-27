@@ -57,7 +57,7 @@ public class Time24
 		}
 		else{
 			if(hours ==12){
-				hours = 0;
+				hours = 00;
 			}
 		}
 		try{

@@ -50,7 +50,7 @@ public class Time24Test
     public void test_Case_900()
     {
         Time24 tester = null;
-        tester = tester.toTime24(9, 0, AmPm.am);
+        tester = tester.toTime24(9, 00, AmPm.am);
         
         String timeString = tester.toString();
         System.out.println(timeString);
