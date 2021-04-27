@@ -60,7 +60,12 @@ public class Time24
 				hours = 0;
 			}
 		}
-		time = new Time24(hours,minutes) ;
+		try{
+			time = new Time24(hours, minutes);
+		}catch(Exception e){
+			
+		}
+		
 
 
 
