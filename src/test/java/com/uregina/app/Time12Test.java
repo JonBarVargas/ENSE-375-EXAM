@@ -18,10 +18,10 @@ public class Time12Test
         try{
         Time12 tester = new Time12(1, 30, AmPm.pm);
         }catch(Exception e){
-            
-        }
 
-        boolean testing = ((tester.getAM_or_PM()) == AmPm.pm);
+        }
+        AmPm yeeters = tester.getAM_or_PM;
+        //boolean testing = ((tester.getAM_or_PM()) == AmPm.pm);
         assertTrue( testing );
     }
 }
