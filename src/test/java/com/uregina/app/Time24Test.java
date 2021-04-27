@@ -22,7 +22,7 @@ public class Time24Test
         tester = tester.toTime24(1, 30, AmPm.pm);
         
         AmPm yeeters = tester.getAM_or_PM();
-        boolean testing = ((tester.getAM_or_PM()) == AmPm.pm);
-        assertTrue( true );
+        boolean testing = ((tester.getHours()) == 13);
+        assertTrue( testing );
     }
 }
