@@ -60,7 +60,7 @@ public class Time24
 				hours = 0;
 			}
 		}
-		time = new Time24(hourse,minutes) ;
+		time = new Time24(hours,minutes) ;
 
 
 
