@@ -84,7 +84,6 @@ public class Time12
 
 		difference = T1mins -T2mins;
 
-
 		// end of your code
 		return difference;
 	}
