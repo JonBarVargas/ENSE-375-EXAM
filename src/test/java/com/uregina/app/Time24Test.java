@@ -35,7 +35,7 @@ public class Time24Test
        // AmPm yeeters = tester.getAM_or_PM();
        String timeString = tester.toString();
        System.out.println(timeString);
-        boolean testing = (timeString.equals("0:45"));
+        boolean testing = (timeString.contains("0:45"));
         assertTrue( testing );
     }
 }
