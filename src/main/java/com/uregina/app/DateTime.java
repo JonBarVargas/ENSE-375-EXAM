@@ -51,7 +51,12 @@ public class DateTime
 	{
 		int diff=0;
 		//Todo: add your code here
-
+		//check consecutive days
+		boolean bound1 = Date.equal(d1.date(), d2.date());
+		bound1 = Date.equal(d2.date(), d1.date());
+		if(bound1){
+			
+		}
 		//end of your code
 		return diff;
 	}
