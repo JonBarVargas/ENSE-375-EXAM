@@ -52,11 +52,27 @@ public class DateTime
 		int diff=0;
 		//Todo: add your code here
 		//check consecutive days
-		boolean bound1 = Date.equal(d1.getDate(), d2.getDate());
-		bound1 = Date.equal(d2.getDate(), d1.getDate());
-		if(bound1){
+		Date date1 = d1.getDate();
+		Time12 time1 = d1.getTime();
+		Date date2 = d2.getDate();
+		Time12 time2 = d2.getTime();
+		
+		boolean boundSameDay = Date.equal(date1, date2);
+		boolean boundNextDay = (Date.equal(date1, date2.nextDate()));
+		boolean boundNextDay2 = (Date.equal(date2, date1.nextDate()));
 
+		if(!boundNextDay && !boundNextDay2) throw new MoreThanOneDayException();
+
+		diff = time1.subtract(time1, time2); //if the same date just return this
+
+		if(boundNextDay){
+			diff -= 24*60;
 		}
+		
+		if(boundNextDay2){
+			diff += 24*60;
+		}
+
 		//end of your code
 		return diff;
 	}
