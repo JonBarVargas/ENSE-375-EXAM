@@ -63,12 +63,8 @@ public class Time24
 		try{
 			time = new Time24(hours, minutes);
 		}catch(InvalidTimeException e){
-			
+			System.out.println(e.getMessage());
 		}
-		
-
-
-
 		// End of your code
 		return time;
 	}
