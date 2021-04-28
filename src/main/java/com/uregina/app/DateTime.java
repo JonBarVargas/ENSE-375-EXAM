@@ -52,10 +52,10 @@ public class DateTime
 		int diff=0;
 		//Todo: add your code here
 		//check consecutive days
-		boolean bound1 = Date.equal(d1.date(), d2.date());
-		bound1 = Date.equal(d2.date(), d1.date());
+		boolean bound1 = Date.equal(d1.getDate(), d2.getDate());
+		bound1 = Date.equal(d2.getDate(), d1.getDate());
 		if(bound1){
-			
+
 		}
 		//end of your code
 		return diff;
